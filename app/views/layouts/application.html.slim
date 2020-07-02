@@ -15,4 +15,7 @@ html
       = link_to("About", "/about")
       = link_to("Post", "/post")
       = link_to("New", "/post/new")
+    - if flash[:notice]
+      .flash
+        = flash[:notice]
     = yield

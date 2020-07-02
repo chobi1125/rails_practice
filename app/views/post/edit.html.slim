@@ -1,0 +1,7 @@
+.ly
+  = form_tag("/post/#{@post.id}/update") do
+    textarea name="content" cols="30" rows="10" = @post.content
+    input type="submit" value="保存"
+  - @post.errors.full_messages.each do | message |
+    = message
+  

@@ -1,3 +1,5 @@
 = form_tag("/post/create") do
+  - @post.errors.full_messages.each do | message |
+    = message
   textarea name="content" cols="30" rows="10"
   input type="submit" value="投稿"
