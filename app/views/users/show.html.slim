@@ -1,0 +1,6 @@
+.ly
+  img src="/user_images/#{@user.image_name}"
+  p = @user.name
+  p = @user.email
+  = link_to("編集", "/users/#{@user.id}/edit")
+  / = link_to("削除", "/post/#{@post.id}/destroy", {method: "post"})

@@ -26,7 +26,7 @@
 */
 
 body {
-  color: black;
+  color: rgb(79, 79, 79);
   background-color: rgba(255, 195, 104, 0.313);
   margin: 0 auto;
   font-family: sans-serif;
@@ -43,12 +43,37 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: rgb(0, 170, 255);
 }
 
+a {
+  margin-right: 10px;
+  // text-decoration: none;
+  &:hover,&:link,&:visited,&:active {
+    color: rgb(79, 79, 79);
+  }
+}
 
 p {
-  font-weight: bold;
+  // font-weight: bold;
+  color: rgb(79, 79, 79);
+}
+
+img {
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  font-size: 12px;
+  padding: 5px 8px;
+  margin-top: 10px ;
+  background-color: rgba(204, 123, 0, 0.891);
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
 }
 
 button {
@@ -68,6 +93,13 @@ button {
       color: white;
     }
   }
+}
+
+textarea {
+  width: 95%;
+  height: 200px;
+  margin: 0 auto;
+  resize: none;
 }
 
 // ヘッダーのボタンだけ少し幅広く。

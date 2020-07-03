@@ -1,0 +1,4 @@
+.ly
+  h2 ユーザー一覧
+  - @users.each do | user |
+    p = link_to(user.name, "/users/#{user.id}")

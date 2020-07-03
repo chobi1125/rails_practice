@@ -11,10 +11,13 @@ html
   body
     header
       h1 RailsApp
-      = link_to("Top", "/")
-      = link_to("About", "/about")
-      = link_to("Post", "/post")
-      = link_to("New", "/post/new")
+      .ly
+        = link_to("Top", "/")
+        = link_to("投稿一覧", "/post")
+        = link_to("新規投稿", "/post/new")
+        = link_to("ユーザー一覧", "/users")
+        = link_to("新規登録", "/signup")
+        = link_to("ログイン", "/login")
     - if flash[:notice]
       .flash
         = flash[:notice]
